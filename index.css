@@ -1,143 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
+
 :root {
     --cor-primaria: black;
     --cor-secundaria: darkturquoise;
-    --cor-terciaria: darkviolet;
+    --cor-terciaria: white;
     --cor-quartaria: yellow;
-    --cor-quintaria: white;
+    --cor-hover: darkviolet;
+    --cor-quintaria: gray;
+    --fonte-primaria: 'Montserrat', sans-serif;
+    --fonte-secundaria: 'Poppins', sans-serif;
+}
 
-    --fonte-primaria: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    --fonte-secundaria: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    background-image: url('images/fundo\ portifólio.png');
+    background-color: var(--cor-quintaria);
+    color: var(--cor-terciaria);
     font-family: var(--fonte-primaria);
+    line-height: 1.6;
 }
 
-.body_banco {
-    background-color: var(--cor-primaria);
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
+.titulo_principal_banco{
+    text-align: center;
+}
+
+.apresentacao {
+    padding: 5% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.apresentacao__conteudo {
+    text-align: center;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1em;
+    gap: 2rem;
+    flex: 1 1 auto;
 }
 
-header {
+.apresentacao__imagem {
+    max-width: 100%;
+    height: auto;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.5rem;
+    font-family: var(--fonte-primaria);
+    border: 3px solid var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
     text-align: center;
-    margin-bottom: 2em;
 }
 
-.titulo_principal_banco {
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
-    font-size: 2rem;
-    color: var(--cor-primaria);
-    background-color: var(--cor-quintaria);
-    padding: 0.5em 1em;
-    border-radius: 8px;
     border: 3px solid var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    text-align: justify;
 }
 
-.container_imagens2 {
-    margin-top: 1em;
-}
-
-.texto{
-    color: var(--cor-primaria);
-    background-color: var(--cor-quintaria);
-    border-radius: 8px;
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
     border: 3px solid var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    gap: 1.5rem;
+    text-align: center;
 }
 
-.botao_de_contato {
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
+.apresentacao__links__navegacao {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 50px;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: var(--cor-hover);
+    transform: translateY(-3px);
+}
+
+.apresentacao__links__imagem {
+    width: 40px;
+    height: 40px;
     transition: transform 0.3s ease;
 }
 
-.botao_de_contato:hover {
+.apresentacao__links__imagem:hover {
     transform: scale(1.2);
 }
 
-main {
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.apresentacao__imagem {
+    flex: 1 1 50%;
+    max-width: 100%;
+    height: auto;
 }
 
-.formulario_banco {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1.5em;
-}
-
-.entrada_do_deposito,
-.entrada_do_saque,
-.entrada_da_transferencia {
-    width: 90%;
-    max-width: 400px;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
-    font-size: 1rem;
-    font-weight: 200;
-    border-radius: 24px;
-    padding: 0.8em;
-    border: none;
-    outline: none;
-    margin-bottom: 1em;
-    text-align: center;
-}
-
-button {
-    width: 90%;
-    max-width: 300px;
-    padding: 0.8em;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 24px;
-    border: none;
-    cursor: pointer;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-primaria);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-    background-color: var(--cor-primaria);
-    color: var(--cor-quintaria);
-    transform: scale(1.05);
-}
-
-
-@media screen and (max-width: 768px) {
-    .titulo_principal_banco {
-        font-size: 1.5rem;
+@media (max-width: 768px) {
+    .apresentacao {
+        padding: 2rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    .apresentacao__imagem {
+        max-width: 80%;
+    }
+    .apresentacao__links__navegacao {
+        font-size: 1rem;
+    }
+    .apresentacao__links__imagem {
+        width: 30px;
+        height: 30px;
     }
 
-    input,
-    button {
-        font-size: 0.9rem;
+    .apresentacao {
+        padding: 1rem;
+        gap: 1rem; 
     }
-}
-
-@media screen and (max-width: 480px) {
-    .titulo_principal_banco {
-        font-size: 1.2rem;
-        padding: 0.5em;
+    .apresentacao__links {
+        gap: 1rem; 
+    }
+    .apresentacao__conteudo {
+        gap: 1.5rem; 
     }
 
-    input,
-    button {
-        font-size: 0.8rem;
-        padding: 0.6em;
+    .apresentacao__conteudo__titulo {
+        font-size: 2rem; 
+    }
+    .apresentacao__conteudo__texto {
+        font-size: 1.2rem; 
+    }
+
+    .apresentacao__conteudo__texto {
+        text-align: center;
+    }
+
+    .apresentacao__links__navegacao {
+        padding: 0.5rem; 
+        font-size: 0.9rem; 
     }
 }

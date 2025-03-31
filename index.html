@@ -1,36 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco com JavaScript</title>
-    <link rel="stylesheet" href="../wmprogrammer/wmprogrammer.css">
+    <title>Banco</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body class="body_banco">
+<body>
     <header>
         <h1 class="titulo_principal_banco">Bem-vindo ao seu banco</h1>
-        <div class="container_imagens2">
-        </div>
     </header>
+    <div class="apresentacao_links">
 
-    <main>
-        <div class="formulario_banco">
-            <input type="text" placeholder="Digite o valor para depósito" class="entrada_do_deposito">
-            <button onclick="depositar()" class="botao_depositar">Depositar</button>
-        </div>
+        <a class="apresentacao__links__navegacao" href=".html\extrato.html">
+            <img class="apresentacao__links__imagem" src="images/extrato.jpeg" alt="Ícone extrato">
+            Extrato
+        </a>
+        
+        <a class="apresentacao__links__navegacao" href=".html\configuracoes.html">
+            <img class="apresentacao__links__imagem" src="images/configuracoes.jpeg" alt="Ícone configuracoes">
+            Configurações
+        </a>
 
-        <div class="formulario_banco">
-            <input type="text" placeholder="Digite o valor para saque" class="entrada_do_saque">
-            <button onclick="sacar()" class="botao_sacar">Sacar</button>
-        </div>
+        <a class="apresentacao__links__navegacao" href="images\invistaseudinheiro.jpeg">
+            <img class="apresentacao__links__imagem" src="images/invistaseudinheiro.jpeg" alt="Ícone Investimento">
+            Investimento
+        </a>
 
-        <div class="formulario_banco">
-            <input type="text" placeholder="Digite o valor para transferência" class="entrada_da_transferencia">
-            <button onclick="fazerTransferencia()" class="botao_fazer_transferencia">Transferir</button>
-        </div>
-    </main>
-
-    <script src="index.js" defer></script>
+    </div>
 </body>
 </html>
