@@ -235,23 +235,6 @@ main {
     margin-bottom: 1.5em;
 }
 
-.entrada_do_deposito,
-.entrada_do_saque,
-.entrada_da_transferencia {
-    width: 90%;
-    max-width: 400px;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
-    font-size: 1rem;
-    font-weight: 200;
-    border-radius: 24px;
-    padding: 0.8em;
-    border: none;
-    outline: none;
-    margin-bottom: 1em;
-    text-align: center;
-}
-
 button {
     width: 90%;
     max-width: 300px;
