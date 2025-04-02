@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco</title>
+    <link rel="stylesheet" href="../css/informações-pessoais.css">
+</head>
+<body class="body_banco">
+    <header>
+        <h1 class="titulo_principal_banco">Informações Pessoais</h1>
+        <div class="container_imagens2">
+        </div>
+        <div class="container_imagens2">
+            <a class="link_botao_voltar" href="../html/configuracoes.html">
+                <img class="botao_de_contato" src="../images/configuracoes.jpeg" alt="botão voltar">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="formulario_banco">
+            <input type="text" placeholder="Digite seu nome completo conforme está no RG" class="entrada_do_nome">
+            <button onclick="salvarNome()" class="botao_salvar">salvar</button>
+        </div>
+
+        <div class="formulario_banco">
+            <input type="text" placeholder="Adicione seu endereço, conforme comprovante de endereço" class="entrada_do_endereco">
+            <button onclick="salvarEndereco()" class="botao_salvar">salvar</button>
+        </div>
+
+        <div class="formulario_banco">
+            <input type="text" placeholder="Adicione renda mensal, conforme comprovante de renda" class="entrada_da_renda">
+            <button onclick="salvarRenda()" class="botao_salvar">salvar</button>
+        </div>
+    </main>
+
+    <script src="../js/informações-pessoais.js" defer></script>
+</body>
+</html>
