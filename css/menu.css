@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
 
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: darkturquoise;
+    --cor-terciaria: darkviolet;
+    --cor-quartaria: yellow;
+    --cor-quintaria: white;
+    --cor-sextaria: gray;
+
+    --fonte-primaria: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --fonte-secundaria: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: var(--fonte-primaria);
-}
-
-.body_banco {
     background-color: var(--cor-primaria);
     background-size: cover;
     background-position: center;
@@ -51,15 +60,6 @@ body {
     height: auto;
 }
 
-.apresentacao__conteudo__titulo {
-    font-size: 2.5rem;
-    font-family: var(--fonte-primaria);
-    border: 3px solid var(--cor-primaria);
-    background-color: var(--cor-primaria);
-    color: var(--cor-terciaria);
-    text-align: center;
-}
-
 .apresentacao__conteudo__texto {
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
@@ -88,8 +88,8 @@ body {
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 200;
-    color: var(--cor-quintaria);
-    background-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+    background-color: var(--cor-quintaria);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -114,6 +114,33 @@ body {
     height: auto;
 }
 
+.container_imagens, .container_imagens2 {
+    bottom: 8px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_imagens {
+    right: 16px;
+}
+
+.container_imagens2 {
+    left: 16px;
+}
+
+.botao_de_contato {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botao_de_contato:hover {
+    transform: scale(1.2);
+}
+
 @media (max-width: 768px) {
     .apresentacao {
         padding: 2rem;
@@ -129,6 +156,28 @@ body {
     .apresentacao__links__imagem {
         width: 30px;
         height: 30px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem_programmer {
+        width: 120px;
+        height: 120px;
+    }
+
+    .container_imagens, .container_imagens2 {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+
+    .botao_de_contato {
+        width: 60px;
+        height: 60px;
     }
 
     .apresentacao {
@@ -159,19 +208,6 @@ body {
     }
 }
 
-:root {
-    --cor-primaria: black;
-    --cor-secundaria: darkturquoise;
-    --cor-terciaria: darkviolet;
-    --cor-quartaria: yellow;
-    --cor-quintaria: white;
-    --cor-sextaria: gray;
-
-    --fonte-primaria: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    --fonte-secundaria: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
 header {
     text-align: center;
     margin-bottom: 2em;
@@ -180,15 +216,11 @@ header {
 .titulo_principal_banco {
     font-family: var(--fonte-secundaria);
     font-size: 2rem;
-    color: var(--cor-primaria);
-    background-color: var(--cor-quintaria);
+    color: var(--cor-quintaria);
+    background-color: var(--cor-primaria);
     padding: 0.10em 5em;
     border-radius: 8px;
-    border: 5px solid var(--cor-primaria);
-}
-
-.container_imagens2 {
-    margin-top: 1em;
+    border: 5px solid var(--cor-secundaria);
 }
 
 .texto{
@@ -196,28 +228,6 @@ header {
     background-color: var(--cor-quintaria);
     border-radius: 8px;
     border: 3px solid var(--cor-primaria);
-}
-
-.botao_de_contato {
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 50px;
-    padding: 1rem;
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-weight: 200;
-    color: var(--cor-terciaria);
-    background-color: var(--cor-primaria);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.botao_de_contato:hover {
-    transform: scale(1.2);
 }
 
 main {
