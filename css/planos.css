@@ -1,0 +1,278 @@
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: darkturquoise;
+    --cor-terciaria: darkviolet;
+    --cor-quartaria: yellow;
+    --cor-quintaria: white;
+    --cor-sextaria: gray;
+    --fonte-primaria: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --fonte-secundaria: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--cor-sextaria);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo_principal_planos {
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    border: 3px solid var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    color: var(--cor-quintaria);
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.frase_instrucao,
+.frase_instrucao_02 {
+    font-family: var(--fonte-primaria);
+    font-size: 25px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    background-color: var(--cor-primaria);
+    border: 3px solid var(--cor-secundaria);
+    color: var(--cor-quintaria);
+    text-align: center;
+    text-shadow: 1px 1px var(--cor-primaria);
+}
+
+.botao_salvar {
+    width: 90%;
+    max-width: 400px;
+    background-color: var(--cor-quintaria);
+    color: var(--cor-primaria);
+    font-size: 1rem;
+    font-weight: 200;
+    border-radius: 24px;
+    padding: 0.8em;
+    border: none;
+    outline: none;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.imagem_programmer {
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.container_imagens, .container_imagens2 {
+    position: absolute;
+    bottom: 8px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_imagens {
+    right: 16px;
+}
+
+.container_imagens2 {
+    left: 16px;
+}
+
+.botao_de_contato {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botao_de_contato:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    .titulo_principal_planos{
+        font-size: 1.2rem;
+        padding: 0.5em;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem_programmer {
+        width: 120px;
+        height: 120px;
+    }
+
+    .container_imagens, .container_imagens2 {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+
+    .botao_de_contato {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .titulo_principal, .texto_introducao {
+        font-size: 1rem;
+        padding: 0.4em;
+    }
+
+    .container {
+        padding: 5%;
+    }
+
+    .imagem_programmer {
+        width: 100px;
+        height: 100px;
+    }
+
+    .botao_de_contato {
+        width: 50px;
+        height: 50px;
+    }
+}
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: darkturquoise;
+    --cor-terciaria: darkviolet;
+    --cor-quartaria: yellow;
+    --cor-quintaria: white;
+    --cor-sextaria: gray;
+
+    --fonte-primaria: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --fonte-secundaria: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-primaria);
+}
+
+.body_banco {
+    background-color: var(--cor-primaria);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.titulo_principal_banco {
+    font-family: var(--fonte-secundaria);
+    font-size: 2rem;
+    color: var(--cor-primaria);
+    background-color: var(--cor-quintaria);
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    border: 3px solid var(--cor-primaria);
+}
+
+.container_imagens2 {
+    margin-top: 1em;
+}
+
+.texto{
+    color: var(--cor-primaria);
+    background-color: var(--cor-quintaria);
+    border-radius: 8px;
+    border: 3px solid var(--cor-primaria);
+}
+
+.botao_de_contato {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botao_de_contato:hover {
+    transform: scale(1.2);
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.escolha_plano {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+button {
+    width: 90%;
+    max-width: 300px;
+    padding: 0.8em;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-quintaria);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .titulo_principal_banco {
+        font-size: 1.5rem;
+    }
+
+    input,
+    button {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .titulo_principal_banco {
+        font-size: 1.2rem;
+        padding: 0.5em;
+    }
+
+    input,
+    button {
+        font-size: 0.8rem;
+        padding: 0.6em;
+    }
+}
